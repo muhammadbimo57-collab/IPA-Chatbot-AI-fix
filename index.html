@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Assistant IPA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="header-badge">🧬 Sistem Organisasi Kehidupan</div>
+    <h1>🤖 AI Assistant IPA</h1>
+    <p>Tanyakan materi Sel, Jaringan, Organ, Sistem Organ, sampai Difusi &amp; Osmosis</p>
+  </div>
+
+  <div id="chatbox"></div>
+
+  <div class="suggestions" id="suggestions"></div>
+
+  <div class="input-area">
+    <input
+      type="text"
+      id="question"
+      placeholder="Ketik pertanyaan, misal: Apa itu osmosis?"
+      autocomplete="off"
+    >
+    <button id="sendBtn" onclick="sendQuestion()">Kirim</button>
+  </div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
