@@ -15,7 +15,7 @@ const KB = [
   // ================= SEL =================
   {
     id: "sel",
-    keywords: ["apa itu sel", "pengertian sel", "definisi sel", "sel adalah"],
+    keywords: ["apa itu sel", "pengertian sel", "definisi sel", "sel adalah", "sel"],
     title: "Sel",
     answer:
       "Sel adalah unit terkecil penyusun makhluk hidup, baik dari segi <b>struktur</b> (bentuk/susunan) maupun " +
@@ -124,7 +124,7 @@ const KB = [
   },
   {
     id: "mitokondria",
-    keywords: ["mitokondria"],
+    keywords: ["mitokondria", "atp"],
     title: "Mitokondria",
     answer:
       "Mitokondria adalah 'pembangkit energi' sel. Fungsinya membakar sari-sari makanan lewat proses respirasi sel, lalu " +
@@ -262,7 +262,7 @@ const KB = [
   // ================= JARINGAN, ORGAN, SISTEM ORGAN =================
   {
     id: "jaringan",
-    keywords: ["apa itu jaringan", "pengertian jaringan", "jaringan adalah", "definisi jaringan"],
+    keywords: ["apa itu jaringan", "pengertian jaringan", "jaringan adalah", "definisi jaringan", "jaringan"],
     title: "Jaringan",
     answer:
       "Jaringan adalah kumpulan sel-sel <b>sejenis</b> (bentuk &amp; fungsi sama) yang bekerja sama menjalankan tugas tertentu.<br><br>" +
@@ -293,7 +293,7 @@ const KB = [
   },
   {
     id: "organ",
-    keywords: ["apa itu organ", "pengertian organ", "organ adalah", "definisi organ"],
+    keywords: ["apa itu organ", "pengertian organ", "organ adalah", "definisi organ", "organ"],
     title: "Organ",
     answer:
       "Organ adalah kumpulan <b>beberapa jenis jaringan</b> yang bekerja sama menjalankan fungsi tertentu.<br><br>" +
@@ -325,7 +325,7 @@ const KB = [
   },
   {
     id: "sistem-organ",
-    keywords: ["apa itu sistem organ", "pengertian sistem organ", "sistem organ adalah", "macam sistem organ", "sistem organ manusia"],
+    keywords: ["apa itu sistem organ", "pengertian sistem organ", "sistem organ adalah", "macam sistem organ", "sistem organ manusia", "sistem organ"],
     title: "Sistem Organ",
     answer:
       "Sistem organ adalah kumpulan <b>beberapa organ</b> yang saling bergantung &amp; berinteraksi menjalankan fungsi " +
@@ -338,7 +338,7 @@ const KB = [
   },
   {
     id: "sistem-pencernaan",
-    keywords: ["sistem pencernaan"],
+    keywords: ["sistem pencernaan", "pencernaan"],
     title: "Sistem Pencernaan",
     answer:
       "Sistem pencernaan berfungsi mengolah makanan menjadi sari-sari makanan yang bisa diserap tubuh. " +
@@ -346,7 +346,7 @@ const KB = [
   },
   {
     id: "sistem-pernapasan",
-    keywords: ["sistem pernapasan", "sistem respirasi"],
+    keywords: ["sistem pernapasan", "sistem respirasi", "pernapasan", "respirasi"],
     title: "Sistem Pernapasan",
     answer:
       "Sistem pernapasan berfungsi memasukkan oksigen &amp; mengeluarkan karbon dioksida dari tubuh. " +
@@ -354,7 +354,7 @@ const KB = [
   },
   {
     id: "sistem-peredaran-darah",
-    keywords: ["sistem peredaran darah", "sistem sirkulasi"],
+    keywords: ["sistem peredaran darah", "sistem sirkulasi", "peredaran darah", "sirkulasi"],
     title: "Sistem Peredaran Darah",
     answer:
       "Sistem peredaran darah berfungsi mengalirkan darah (oksigen, sari makanan, &amp; zat sisa) ke seluruh tubuh. " +
@@ -362,7 +362,7 @@ const KB = [
   },
   {
     id: "sistem-ekskresi",
-    keywords: ["sistem ekskresi"],
+    keywords: ["sistem ekskresi", "ekskresi"],
     title: "Sistem Ekskresi",
     answer:
       "Sistem ekskresi berfungsi membuang zat sisa metabolisme tubuh. Organ penyusunnya: ginjal (urine), " +
@@ -370,7 +370,7 @@ const KB = [
   },
   {
     id: "sistem-saraf",
-    keywords: ["sistem saraf"],
+    keywords: ["sistem saraf", "saraf"],
     title: "Sistem Saraf",
     answer:
       "Sistem saraf berfungsi menerima &amp; menghantarkan rangsangan (impuls) sehingga tubuh bisa bereaksi terhadap " +
@@ -378,7 +378,7 @@ const KB = [
   },
   {
     id: "sistem-gerak",
-    keywords: ["sistem gerak", "sistem otot rangka"],
+    keywords: ["sistem gerak", "sistem otot rangka", "otot rangka"],
     title: "Sistem Gerak",
     answer:
       "Sistem gerak terdiri dari tulang (rangka) &amp; otot yang bekerja sama supaya tubuh bisa bergerak. Tulang berperan " +
@@ -386,7 +386,7 @@ const KB = [
   },
   {
     id: "sistem-endokrin",
-    keywords: ["sistem endokrin", "sistem hormon"],
+    keywords: ["sistem endokrin", "sistem hormon", "endokrin", "hormon"],
     title: "Sistem Endokrin",
     answer:
       "Sistem endokrin berfungsi menghasilkan &amp; mengedarkan hormon yang mengatur berbagai proses tubuh (pertumbuhan, " +
@@ -395,7 +395,7 @@ const KB = [
   },
   {
     id: "sistem-reproduksi",
-    keywords: ["sistem reproduksi"],
+    keywords: ["sistem reproduksi", "reproduksi"],
     title: "Sistem Reproduksi",
     answer:
       "Sistem reproduksi berfungsi dalam proses perkembangbiakan &amp; menghasilkan keturunan. Pada tumbuhan, organ " +
@@ -403,7 +403,7 @@ const KB = [
   },
   {
     id: "sistem-integumen",
-    keywords: ["sistem integumen"],
+    keywords: ["sistem integumen", "integumen"],
     title: "Sistem Integumen",
     answer:
       "Sistem integumen berfungsi melindungi tubuh dari luar. Organ utamanya adalah <b>kulit</b>, beserta pelengkapnya " +
@@ -411,7 +411,7 @@ const KB = [
   },
   {
     id: "sistem-imun",
-    keywords: ["sistem imun", "sistem kekebalan tubuh"],
+    keywords: ["sistem imun", "sistem kekebalan tubuh", "imun", "kekebalan tubuh"],
     title: "Sistem Imun",
     answer:
       "Sistem imun (kekebalan tubuh) berfungsi melindungi tubuh dari serangan bibit penyakit (bakteri, virus, dll). " +
@@ -432,7 +432,7 @@ const KB = [
   // ================= DIFUSI, OSMOSIS, TURGOR =================
   {
     id: "difusi",
-    keywords: ["apa itu difusi", "pengertian difusi", "difusi adalah"],
+    keywords: ["apa itu difusi", "pengertian difusi", "difusi adalah", "difusi"],
     title: "Difusi",
     answer:
       "Difusi adalah perpindahan partikel/molekul zat (boleh zat apa saja: gas, cairan, zat terlarut) dari daerah " +
@@ -443,7 +443,7 @@ const KB = [
   },
   {
     id: "osmosis",
-    keywords: ["apa itu osmosis", "pengertian osmosis", "osmosis adalah", "osmosis sel"],
+    keywords: ["apa itu osmosis", "pengertian osmosis", "osmosis adalah", "osmosis sel", "osmosis"],
     title: "Osmosis",
     answer:
       "Osmosis adalah perpindahan khusus <b>molekul air</b> melalui <b>membran semipermeabel</b>, dari daerah dengan " +

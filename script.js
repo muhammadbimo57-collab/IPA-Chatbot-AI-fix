@@ -69,22 +69,26 @@ function showTyping() {
 // dengan keyword "sejarah sel" karena kedua katanya ada di teks)
 function keywordMatches(keyword, text) {
   const words = normalize(keyword).split(" ").filter(Boolean);
-  return words.every((w) => text.includes(w));
+  return words.every((w) => text.includes(w)) ? words.length : 0;
 }
 
-// Cari jawaban paling cocok di KB berdasarkan jumlah keyword yang muncul
+// Cari jawaban paling cocok di KB. Setiap topik dinilai berdasarkan
+// keyword TERPANJANG (paling spesifik) yang cocok dengan pertanyaan,
+// supaya keyword umum (misal "sel") tidak mengalahkan keyword lebih
+// spesifik (misal "sel hewan") saat keduanya sama-sama muncul di teks.
 function findAnswer(userText) {
   const text = normalize(userText);
   let bestMatch = null;
   let bestScore = 0;
 
   KB.forEach((item) => {
-    let score = 0;
+    let itemBest = 0;
     item.keywords.forEach((kw) => {
-      if (keywordMatches(kw, text)) score += 1;
+      const specificity = keywordMatches(kw, text);
+      if (specificity > itemBest) itemBest = specificity;
     });
-    if (score > bestScore) {
-      bestScore = score;
+    if (itemBest > bestScore) {
+      bestScore = itemBest;
       bestMatch = item;
     }
   });
