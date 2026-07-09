@@ -64,6 +64,14 @@ function showTyping() {
   return row;
 }
 
+// Cek apakah SEMUA kata dalam satu keyword muncul di teks pertanyaan,
+// tidak perlu berurutan persis (misal "sejarah penemuan sel" tetap cocok
+// dengan keyword "sejarah sel" karena kedua katanya ada di teks)
+function keywordMatches(keyword, text) {
+  const words = normalize(keyword).split(" ").filter(Boolean);
+  return words.every((w) => text.includes(w));
+}
+
 // Cari jawaban paling cocok di KB berdasarkan jumlah keyword yang muncul
 function findAnswer(userText) {
   const text = normalize(userText);
@@ -73,7 +81,7 @@ function findAnswer(userText) {
   KB.forEach((item) => {
     let score = 0;
     item.keywords.forEach((kw) => {
-      if (text.includes(normalize(kw))) score += 1;
+      if (keywordMatches(kw, text)) score += 1;
     });
     if (score > bestScore) {
       bestScore = score;

@@ -27,7 +27,7 @@ const KB = [
   },
   {
     id: "sejarah-sel",
-    keywords: ["sejarah sel", "penemu sel", "siapa yang menemukan sel", "teori sel", "robert hooke", "anton van leeuwenhoek", "robert brown", "schleiden schwann"],
+    keywords: ["sejarah sel", "sejarah penemuan sel", "penemuan sel", "penemu sel", "siapa yang menemukan sel", "teori sel", "robert hooke", "anton van leeuwenhoek", "robert brown", "schleiden schwann"],
     title: "Sejarah Penemuan Sel",
     answer:
       "Beberapa tokoh penting di balik konsep sel:<br><br>" +
