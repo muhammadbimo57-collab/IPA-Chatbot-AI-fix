@@ -26,6 +26,47 @@ const KB = [
       "<b>sel eukariotik</b> (sudah punya membran inti, contoh: sel hewan &amp; sel tumbuhan)."
   },
   {
+    id: "sejarah-sel",
+    keywords: ["sejarah sel", "penemu sel", "siapa yang menemukan sel", "teori sel", "robert hooke", "anton van leeuwenhoek", "robert brown", "schleiden schwann"],
+    title: "Sejarah Penemuan Sel",
+    answer:
+      "Beberapa tokoh penting di balik konsep sel:<br><br>" +
+      "🔬 <b>Robert Hooke (1665)</b> — orang pertama yang memakai istilah 'sel'. Ia mengamati gabus (kulit kayu mati) " +
+      "lewat mikroskop sederhana &amp; melihat ruang-ruang kecil menyerupai kamar/sel penjara.<br>" +
+      "🦠 <b>Anton van Leeuwenhoek</b> — orang pertama yang berhasil melihat &amp; mendeskripsikan sel hidup " +
+      "(mikroorganisme) menggunakan mikroskop buatannya sendiri.<br>" +
+      "🧬 <b>Robert Brown</b> — menemukan keberadaan <b>nukleus (inti sel)</b>.<br>" +
+      "📖 <b>Schleiden &amp; Schwann (1855)</b> — mengusulkan <b>Teori Sel</b>, yang menjelaskan bahwa sel adalah " +
+      "unit dasar penyusun seluruh makhluk hidup."
+  },
+  {
+    id: "sel-prokariotik",
+    keywords: ["sel prokariotik", "prokariotik"],
+    title: "Sel Prokariotik",
+    answer:
+      "Sel prokariotik adalah tipe sel paling sederhana/primitif secara struktur. Cirinya:<br><br>" +
+      "• Hanya dikelilingi <b>satu membran tunggal</b>, tanpa inti sel yang terbungkus membran (materi genetiknya " +
+      "'bercampur' bebas di dalam sel, tidak dikemas rapi dalam nukleus)<br>" +
+      "• Tidak punya organel bermembran seperti mitokondria &amp; kloroplas<br>" +
+      "• Ukurannya sangat kecil, sekitar 1–10 mikrometer<br>" +
+      "• Contoh: bakteri, cyanobacteria (alga hijau-biru), &amp; Mycoplasma<br><br>" +
+      "Bakteri sendiri berkembang biak dengan cara membelah diri, dan sebagian bersifat patogen (bisa menyebabkan penyakit) pada manusia."
+  },
+  {
+    id: "sel-eukariotik",
+    keywords: ["sel eukariotik", "eukariotik"],
+    title: "Sel Eukariotik",
+    answer:
+      "Sel eukariotik punya struktur lebih kompleks dibanding sel prokariotik. Cirinya:<br><br>" +
+      "• Punya organel-organel yang terbungkus membran sendiri-sendiri (nukleus, mitokondria, dll)<br>" +
+      "• Punya membran sel (plasma) yang membungkus sitoplasma, plus membran internal yang membentuk 'ruangan-ruangan' " +
+      "khusus di dalam sel<br>" +
+      "• Makhluk hidup dengan sel eukariotik dibagi menjadi 4 kingdom: <b>Protista, Fungi (jamur), Plantae (tumbuhan), " +
+      "&amp; Animalia (hewan)</b><br><br>" +
+      "Ingat, sel eukariotik tidaklah semuanya identik — itulah kenapa sel tumbuhan &amp; sel hewan bisa berbeda " +
+      "(lihat topik 'sel hewan vs sel tumbuhan')."
+  },
+  {
     id: "sel-hewan-tumbuhan",
     keywords: ["sel hewan", "sel tumbuhan", "perbedaan sel hewan dan tumbuhan", "beda sel hewan tumbuhan"],
     title: "Sel Hewan vs Sel Tumbuhan",
@@ -76,7 +117,10 @@ const KB = [
     answer:
       "Nukleus adalah <b>pusat pengendali seluruh kegiatan sel</b> &amp; tempat menyimpan materi genetik (DNA).<br><br>" +
       "🏢 Analogi: nukleus itu seperti <b>CEO/direktur sebuah perusahaan</b>. Dia yang memberi 'perintah' kapan sel kulit, " +
-      "sel usus, atau sel lain harus membelah/berganti baru, sekaligus menyimpan seluruh 'data penting' (DNA) perusahaan."
+      "sel usus, atau sel lain harus membelah/berganti baru, sekaligus menyimpan seluruh 'data penting' (DNA) perusahaan.<br><br>" +
+      "📌 Fakta tambahan: DNA di dalam nukleus punya 2 bentuk berbeda tergantung situasi —<br>" +
+      "• Saat sel membelah: DNA menggulung rapat &amp; memadat menjadi <b>kromosom</b><br>" +
+      "• Saat sel tidak sedang membelah: DNA menyebar longgar &amp; disebut <b>kromatin</b>"
   },
   {
     id: "mitokondria",
@@ -86,7 +130,10 @@ const KB = [
       "Mitokondria adalah 'pembangkit energi' sel. Fungsinya membakar sari-sari makanan lewat proses respirasi sel, lalu " +
       "menghasilkan energi dalam bentuk <b>ATP (Adenosin Tri Fosfat)</b>.<br><br>" +
       "💡 Analogi: mitokondria itu seperti <b>pembangkit listrik tenaga air (PLTA)</b> — PLTA mengubah energi gerak air " +
-      "menjadi energi listrik, sedangkan mitokondria mengubah energi kimia dari makanan menjadi energi (ATP) yang siap dipakai sel."
+      "menjadi energi listrik, sedangkan mitokondria mengubah energi kimia dari makanan menjadi energi (ATP) yang siap dipakai sel.<br><br>" +
+      "🔎 Struktur mitokondria terdiri dari 2 lapis membran. Membran dalamnya berlipat-lipat membentuk struktur yang " +
+      "disebut <b>krista</b> (memperluas permukaan supaya proses respirasi lebih maksimal), sementara ruang cairan di " +
+      "bagian paling dalam disebut <b>matriks</b>, yang bahkan menyimpan DNA-nya sendiri."
   },
   {
     id: "lisosom",
@@ -103,7 +150,9 @@ const KB = [
     title: "Ribosom",
     answer:
       "Ribosom adalah organel tempat berlangsungnya <b>sintesis (pembuatan) protein</b>. Ada yang menempel pada " +
-      "retikulum endoplasma (disebut RE kasar), ada juga yang melayang bebas di sitoplasma."
+      "retikulum endoplasma (disebut RE kasar), ada juga yang melayang bebas di sitoplasma.<br><br>" +
+      "🔎 Ribosom sendiri dibentuk di dalam nukleolus (bagian dari nukleus), tersusun dari RNA ribosom (rRNA) &amp; " +
+      "protein, serta terdiri dari 2 komponen: <b>subunit besar</b> &amp; <b>subunit kecil</b> yang menyatu saat bekerja."
   },
   {
     id: "re",
@@ -112,8 +161,11 @@ const KB = [
     answer:
       "Retikulum endoplasma adalah jaringan membran berliku yang berfungsi sebagai <b>'jalan tol' transportasi zat</b> " +
       "di dalam sel.<br><br>" +
-      "• <b>RE kasar</b> — ditempeli ribosom, berperan dalam sintesis protein<br>" +
-      "• <b>RE halus</b> — tidak ditempeli ribosom, berperan dalam sintesis lemak &amp; menetralkan racun"
+      "• <b>RE kasar</b> — ditempeli ribosom, berperan dalam sintesis protein untuk diekspor keluar sel<br>" +
+      "• <b>RE halus</b> — tidak ditempeli ribosom, berperan dalam sintesis lemak (termasuk fosfolipid membran sel) " +
+      "&amp; menetralkan racun/obat yang larut dalam lemak<br><br>" +
+      "🔗 RE bekerja satu paket dengan Badan Golgi, membentuk apa yang disebut <b>sistem endomembran</b> — jalur " +
+      "lengkap mulai dari produksi sampai pengiriman zat keluar sel."
   },
   {
     id: "golgi",
@@ -123,15 +175,41 @@ const KB = [
       "Badan Golgi bertugas mengemas, memodifikasi, &amp; mendistribusikan protein/zat hasil produksi sel ke bagian sel " +
       "lain atau ke luar sel.<br><br>" +
       "📦 Analogi: mirip bagian <b>packing &amp; pengiriman paket</b> di sebuah gudang online shop — barang (protein) " +
-      "dikemas rapi dulu sebelum dikirim ke tujuan."
+      "dikemas rapi dulu sebelum dikirim ke tujuan.<br><br>" +
+      "🔎 Prosesnya: protein dari RE kasar masuk ke sisi 'penerimaan' badan Golgi (sisi cis), dimodifikasi di dalamnya, " +
+      "lalu keluar dari sisi 'pengiriman' (sisi trans) dalam bentuk vesikel (gelembung kecil) menuju membran sel. " +
+      "Badan Golgi juga berperan membuat lisosom &amp; bahan penyusun dinding sel pada tumbuhan."
   },
   {
     id: "vakuola",
     keywords: ["vakuola"],
     title: "Vakuola",
     answer:
-      "Vakuola adalah kantung penyimpanan cairan di dalam sel. Pada sel tumbuhan, vakuola berukuran besar &amp; sangat " +
-      "penting karena tekanan cairannya (disebut <b>tekanan turgor</b>) yang membuat sel — dan daun — jadi kaku, tegak, dan segar."
+      "Vakuola adalah kantung penyimpanan cairan di dalam sel yang bisa menyimpan enzim serta molekul organik/anorganik " +
+      "lain. Pada sel tumbuhan, vakuola berukuran besar &amp; sangat penting karena tekanan cairannya (disebut " +
+      "<b>tekanan turgor</b>) yang membuat sel — dan daun — jadi kaku, tegak, dan segar.<br><br>" +
+      "💡 Menariknya, vakuola juga bisa berfungsi mirip lisosom, yaitu membantu 'mencerna' sisa-sisa zat yang tidak diperlukan sel."
+  },
+  {
+    id: "sitoskeleton",
+    keywords: ["sitoskeleton", "rangka sel"],
+    title: "Sitoskeleton",
+    answer:
+      "Sitoskeleton adalah 'rangka' internal sel yang tersusun dari jaringan protein, terdiri dari 3 jenis: " +
+      "<b>mikrotubulus</b> (dari protein tubulin), <b>mikrofilamen</b> (dari protein aktin), &amp; <b>filamen intermediet</b>.<br><br>" +
+      "🦴 Analogi: sitoskeleton ibarat <b>rangka &amp; otot tubuh kita</b> dalam skala sel — memberi bentuk &amp; " +
+      "kekuatan struktural pada sel, memungkinkan sel bergerak, sekaligus membantu mengangkut organel/vesikel dari satu " +
+      "tempat ke tempat lain di dalam sel."
+  },
+  {
+    id: "sentriol",
+    keywords: ["sentriol", "sentrosom"],
+    title: "Sentrosom &amp; Sentriol",
+    answer:
+      "Sentriol adalah sepasang struktur kecil berbentuk silinder yang tersusun dari mikrotubulus (susunannya berupa " +
+      "9 'kembar tiga' membentuk silinder). Sentriol berperan penting saat sel membelah diri.<br><br>" +
+      "⚠️ Organel ini <b>hanya ditemukan pada sel hewan</b> — hampir tidak ada pada sel tumbuhan. Ini salah satu ciri " +
+      "pembeda sel hewan &amp; sel tumbuhan selain dinding sel &amp; kloroplas."
   },
   {
     id: "kloroplas",
@@ -147,19 +225,38 @@ const KB = [
     keywords: ["dinding sel"],
     title: "Dinding Sel",
     answer:
-      "Dinding sel adalah lapisan kaku dari selulosa yang membungkus bagian luar membran sel tumbuhan. Fungsinya memberi " +
-      "bentuk tetap serta perlindungan tambahan bagi sel. Sel hewan <b>tidak</b> memiliki dinding sel — makanya bentuk " +
-      "sel hewan lebih fleksibel/tidak kaku."
+      "Dinding sel adalah lapisan pelindung terluar sel tumbuhan, bersifat semi-kaku &amp; tersusun dari selulosa yang " +
+      "diproduksi oleh sel itu sendiri. Sel hewan <b>tidak</b> memiliki dinding sel — makanya bentuk sel hewan lebih " +
+      "fleksibel/tidak kaku.<br><br>" +
+      "🛡️ Fungsi lengkap dinding sel:<br>" +
+      "• Memberi kekuatan &amp; bentuk tetap pada sel<br>" +
+      "• Jadi penghalang terhadap virus, bakteri, &amp; jamur patogen<br>" +
+      "• Membantu transportasi zat masuk-keluar sel<br>" +
+      "• Menahan <b>tekanan turgor</b> yang timbul akibat tekanan osmotik tinggi di dalam sel"
   },
   {
     id: "membran-sel",
     keywords: ["membran sel", "membran plasma"],
     title: "Membran Sel",
     answer:
-      "Membran sel adalah lapisan pembungkus sel yang bersifat <b>semipermeabel</b> (selektif permeabel) — artinya hanya " +
-      "bisa dilewati zat-zat tertentu saja, tidak semua zat bebas keluar-masuk.<br><br>" +
+      "Membran sel adalah lapisan pembungkus sel yang tipis, elastis, &amp; bersifat <b>semipermeabel</b> (selektif " +
+      "permeabel) — artinya hanya bisa dilewati zat-zat tertentu saja, tidak semua zat bebas keluar-masuk.<br><br>" +
       "🚪 Analogi: membran sel itu seperti <b>satpam pintu gerbang</b> yang menyeleksi siapa boleh masuk/keluar. " +
-      "Sifat inilah yang mendasari terjadinya difusi &amp; osmosis."
+      "Sifat inilah yang mendasari terjadinya difusi &amp; osmosis.<br><br>" +
+      "🔬 Secara struktur, membran sel tersusun dari 2 lapis (bilayer) molekul fosfolipid, dengan protein, karbohidrat, " +
+      "&amp; kolesterol yang tersebar di dalamnya — ini disebut <b>model mosaik fluida</b>."
+  },
+  {
+    id: "transpor-aktif-pasif",
+    keywords: ["transpor aktif", "transpor pasif", "transport aktif", "transport pasif", "pompa natrium kalium", "pompa na k"],
+    title: "Transpor Aktif &amp; Transpor Pasif",
+    answer:
+      "Ini adalah 2 cara molekul melintasi membran sel:<br><br>" +
+      "🚶 <b>Transpor pasif</b> — molekul bergerak bebas melintasi membran <b>tanpa</b> perlu energi tambahan, mengikuti " +
+      "arah dari konsentrasi tinggi ke rendah. Difusi &amp; osmosis termasuk jenis ini.<br><br>" +
+      "🏋️ <b>Transpor aktif</b> — molekul dipindahkan melawan arah alaminya (dari konsentrasi rendah ke tinggi), " +
+      "sehingga <b>butuh energi (ATP)</b>. Contohnya adalah pompa Na⁺/K⁺ (natrium-kalium) yang mengatur keluar-masuknya " +
+      "ion natrium &amp; kalium pada sel, penting untuk kerja sel saraf &amp; otot."
   },
 
   // ================= JARINGAN, ORGAN, SISTEM ORGAN =================
@@ -228,11 +325,15 @@ const KB = [
   },
   {
     id: "sistem-organ",
-    keywords: ["apa itu sistem organ", "pengertian sistem organ", "sistem organ adalah"],
+    keywords: ["apa itu sistem organ", "pengertian sistem organ", "sistem organ adalah", "macam sistem organ", "sistem organ manusia"],
     title: "Sistem Organ",
     answer:
-      "Sistem organ adalah kumpulan <b>beberapa organ</b> yang saling bekerja sama menjalankan satu fungsi kehidupan " +
-      "tertentu. Contoh: sistem pencernaan, sistem pernapasan, sistem peredaran darah, dan lain-lain. " +
+      "Sistem organ adalah kumpulan <b>beberapa organ</b> yang saling bergantung &amp; berinteraksi menjalankan fungsi " +
+      "tubuh yang lebih besar &amp; kompleks.<br><br>" +
+      "Sistem organ pada manusia meliputi:<br>" +
+      "🍜 Sistem pencernaan • 🫁 Sistem pernapasan • ❤️ Sistem peredaran darah • ⚡ Sistem saraf • 🫘 Sistem ekskresi • " +
+      "🦴 Sistem rangka &amp; otot (gerak) • 🧪 Sistem endokrin (hormon) • 👶 Sistem reproduksi • 🧴 Sistem integumen " +
+      "(kulit &amp; pelengkapnya) • 🛡️ Sistem imun (kekebalan tubuh)<br><br>" +
       "Coba tanya salah satu nama sistem organ untuk penjelasan lebih lengkap!"
   },
   {
@@ -282,6 +383,40 @@ const KB = [
     answer:
       "Sistem gerak terdiri dari tulang (rangka) &amp; otot yang bekerja sama supaya tubuh bisa bergerak. Tulang berperan " +
       "sebagai alat gerak pasif, otot sebagai alat gerak aktif (otot yang berkontraksi menggerakkan tulang)."
+  },
+  {
+    id: "sistem-endokrin",
+    keywords: ["sistem endokrin", "sistem hormon"],
+    title: "Sistem Endokrin",
+    answer:
+      "Sistem endokrin berfungsi menghasilkan &amp; mengedarkan hormon yang mengatur berbagai proses tubuh (pertumbuhan, " +
+      "metabolisme, suasana hati, dll). Organ penyusunnya antara lain kelenjar tiroid, kelenjar pituitari (hipofisis), " +
+      "&amp; pankreas."
+  },
+  {
+    id: "sistem-reproduksi",
+    keywords: ["sistem reproduksi"],
+    title: "Sistem Reproduksi",
+    answer:
+      "Sistem reproduksi berfungsi dalam proses perkembangbiakan &amp; menghasilkan keturunan. Pada tumbuhan, organ " +
+      "reproduksinya adalah bunga; pada manusia, organ reproduksinya berbeda antara laki-laki &amp; perempuan."
+  },
+  {
+    id: "sistem-integumen",
+    keywords: ["sistem integumen"],
+    title: "Sistem Integumen",
+    answer:
+      "Sistem integumen berfungsi melindungi tubuh dari luar. Organ utamanya adalah <b>kulit</b>, beserta pelengkapnya " +
+      "seperti rambut &amp; kuku. Sistem ini juga berperan dalam mengatur suhu tubuh &amp; sebagai indra peraba."
+  },
+  {
+    id: "sistem-imun",
+    keywords: ["sistem imun", "sistem kekebalan tubuh"],
+    title: "Sistem Imun",
+    answer:
+      "Sistem imun (kekebalan tubuh) berfungsi melindungi tubuh dari serangan bibit penyakit (bakteri, virus, dll). " +
+      "Komponennya melibatkan sel darah putih, kelenjar getah bening, &amp; berbagai organ lain yang bekerja sama " +
+      "melawan infeksi."
   },
   {
     id: "urutan-organisasi",
@@ -542,12 +677,18 @@ const KB = [
     answer:
       "Berikut topik-topik yang aku kuasai, tinggal ketik salah satu kata kunci ini:<br><br>" +
       "📘 <b>Organisasi kehidupan:</b> sel, jaringan, organ, sistem organ, urutan organisasi kehidupan<br>" +
+      "🕰️ <b>Sejarah &amp; jenis sel:</b> sejarah penemuan sel, sel prokariotik, sel eukariotik, sel hewan vs sel tumbuhan<br>" +
       "🧫 <b>Organel sel:</b> nukleus, mitokondria, lisosom, ribosom, retikulum endoplasma, badan golgi, vakuola, " +
-      "kloroplas, dinding sel, membran sel<br>" +
-      "💧 <b>Difusi &amp; osmosis:</b> difusi, osmosis, tekanan turgor, plasmolisis, hipotonik/hipertonik/isotonik<br>" +
-      "🥬 <b>Studi kasus sayuran:</b> kenapa sayur layu di kulkas, percobaan kentang, vegetable fresh box, fungsi tisu<br>" +
+      "kloroplas, dinding sel, membran sel, sitoskeleton, sentriol, sitoplasma<br>" +
+      "💧 <b>Difusi &amp; osmosis:</b> difusi, osmosis, tekanan turgor, plasmolisis, hipotonik/hipertonik/isotonik, " +
+      "transpor aktif &amp; pasif<br>" +
+      "🫀 <b>Jaringan, organ, sistem organ:</b> jaringan manusia/tumbuhan, organ manusia/tumbuhan, sistem pencernaan, " +
+      "pernapasan, peredaran darah, ekskresi, saraf, gerak, endokrin, reproduksi, integumen, imun<br>" +
+      "🥬 <b>Studi kasus sayuran:</b> kenapa sayur layu di kulkas, percobaan kentang, percobaan 3 cara simpan sayuran, " +
+      "vegetable fresh box, fungsi tisu<br>" +
       "🔬 <b>STEM:</b> bagian science/technology/engineering/mathematics, skor kesegaran<br>" +
-      "📝 <b>Latihan:</b> kuis organel, pertanyaan HOTS, kisi-kisi soal<br><br>" +
+      "📝 <b>Latihan:</b> kuis organel, pertanyaan HOTS, kisi-kisi soal<br>" +
+      "📚 Referensi/daftar pustaka<br><br>" +
       "Silakan ketik pertanyaanmu, misalnya <i>\"apa itu osmosis\"</i> atau <i>\"kenapa sayur layu di kulkas\"</i>."
   },
   {
